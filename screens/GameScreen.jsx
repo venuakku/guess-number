@@ -28,7 +28,7 @@ function GameScreen({ userNumber, gameOver }) {
       return;
     }
     setGuess(res);
-    setMin(guess + 1);
+    setMin(guess);
   }
 
   function higherButtonHandler() {
@@ -47,7 +47,7 @@ function GameScreen({ userNumber, gameOver }) {
       return;
     }
     setGuess(res);
-    setMax(guess - 1);
+    setMax(guess);
   }
 
   function guessNumber(min, max) {
